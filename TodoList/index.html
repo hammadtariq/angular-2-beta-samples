@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    <title>Angular 2 QuickStart</title>
+
+    <!-- 1. Load libraries -->
+    <script src="./node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="./node_modules/systemjs/dist/system.src.js"></script>
+    <script src="./node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="./node_modules/angular2/bundles/angular2.dev.js"></script>
+    
+    <link rel="stylesheet" href="node_modules/ng2-material/dist/ng2-material.css">
+    <link rel="stylesheet" href="node_modules/ng2-material/dist/font.css">
+    
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        map: {
+            app: "./app",
+            "ng2-material":"node_modules/ng2-material"
+            },
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          },
+        'ng2-material': {
+            defaultExtension: 'js'
+            }
+        }
+      });
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <body>
+    <todoApp>Loading...</todoApp>
+  </body>
+
+</html>
