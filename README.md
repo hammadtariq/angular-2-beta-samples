@@ -1,2 +1,2 @@
-# Angular2Demos
-simple demos of angular 2 beta
+# Learn Angular with Typescript via Demos
+Demos of Angular 2 beta for Getting Started
