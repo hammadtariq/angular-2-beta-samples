@@ -1,15 +1,15 @@
 {
-  "name": "angular.io",
+  "name": "todolist",
   "version": "1.0.0",
-  "description": "",
+  "description": "todo list using typed angular 2",
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [todo,list,angular,2,typescript],
+  "author": "hammad tariq <hammadtariq65@gmial.com>",
   "license": "ISC",
   "dependencies": {
     "angular2": "2.0.0-beta.0",
