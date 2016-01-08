@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/hammadtariq/Angular2Demos/master/tree/Hello%20World"
   },
-  "keywords": [angular,2,typescript,form,custom,validation],
+  "keywords": [angular,2,typescript,hello,world,getting,started],
   "author": "hammad tariq <hammadtariq65@gmial.com>",
   "license": "ISC",
   "dependencies": {
