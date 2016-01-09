@@ -1,5 +1,5 @@
 {
-  "name": "hello world",
+  "name": "helloworld",
   "version": "1.0.0",
   "description": "Angular 2 hello world demo with typescript",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/hammadtariq/Angular2Demos/master/tree/Hello%20World"
   },
-  "keywords": [angular,2,typescript,hello,world,getting,started],
+  "keywords": ["angular","2","typescript","hello","world","getting","started"],
   "author": "hammad tariq <hammadtariq65@gmial.com>",
   "license": "ISC",
   "dependencies": {
