@@ -8,7 +8,7 @@
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
   },
-  "keywords": [todo,list,angular,2,typescript],
+  "keywords": ["todo","list","angular","2","typescript"],
   "author": "hammad tariq <hammadtariq65@gmial.com>",
   "license": "ISC",
   "dependencies": {
