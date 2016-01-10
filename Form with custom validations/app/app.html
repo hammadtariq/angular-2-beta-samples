@@ -1,0 +1,47 @@
+<div>  
+    <h2>Demo Form with custom validations</h2>  
+    <form [ngFormModel]="myForm"  
+          (submit)="onSubmit(myForm.value)">
+ 
+      <div class="form-group"  
+          [class.has-error]="!myForm.find('name').valid && myForm.find('ageC').touched">  
+        <label for="skuInput">Name</label>  
+        <input type="text"  
+               class="form-control"  
+               id="skuInput"  
+               placeholder="enter your name"  
+               #name="ngForm"  
+               [ngFormControl]="myForm.controls['name']"
+               >    
+         <div *ngIf="name.control.hasError('required') && name.control.touched"  
+           class="bg-warning">Name is required</div>  
+           <div *ngIf="name.control.hasError('invalidSku')"  
+                        class="bg-warning">Name must be string</div>
+      </div>
+       
+      <div class="form-group">  
+        <label for="age">Age</label>  
+        <input type="text"  
+                class="form-control"  
+                id="age"  
+                placeholder="enter your age"  
+                [ngFormControl]="myForm.controls['ageC']"
+                [(ngModel)]= 'age'
+                #ageC="ngForm"
+        >  
+        <div *ngIf="ageC.control.hasError('invalidSku')"  
+                        class="bg-warning">Age must be number</div>
+      </div>     
+             <div *ngIf="ageC.control.hasError('required') && ageC.control.touched"  
+           class="bg-warning">age is required</div>  
+           
+      <div *ngIf="!myForm.valid"  
+        class="bg-warning">Form is invalid</div>  
+      <button type="submit" [disabled]="!myForm.valid" class="btn btn-default">Submit</button>  
+    </form>  
+    
+    <table class="table" style="width:100%;" *ngIf="!data.name == '' ">
+    <tr><td>Name: {{data.name}}</td></tr>
+    <tr><td>Age: {{data.ageC}}</td></tr>    
+    </table>
+  </div>   

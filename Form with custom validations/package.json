@@ -1,5 +1,5 @@
 {
-  "name": "Forms using custom validation",
+  "name": "customvalidation",
   "version": "1.0.0",
   "description": "forms using custom validations",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/hammadtariq/Angular2Demos/tree/master/Form%20with%20custom%20validations"
   },
-  "keywords": [angular,2,typescript,form,custom,validation],
+  "keywords": ["angular","2","typescript","form","custom","validation"],
   "author": "hammad tariq <hammadtariq65@gmial.com>",
   "license": "ISC",
   "dependencies": {
