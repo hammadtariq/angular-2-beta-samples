@@ -1,9 +1,16 @@
-<div>
+<div class="container">
     <h3>Add Two Numbers</h3>  
         <form (ngSubmit)="getAddResult(form.value)" #form="ngForm">
-            <input type="number" placeholder="enter first number" ngControl="num1" #num1="ngForm"/>
-            <input type="number" placeholder="enter second number" ngControl="num2" #num2="ngForm"/>
-            <input type="submit" value="Add"/>
+            <div class="form-group">
+                <input id="num1" type="number" class="form-control" placeholder="enter first number" ngControl="num1" #num1="ngForm"/>
+                <br>
+                <input id="num2" type="number" class="form-control" placeholder="enter second number" ngControl="num2" #num2="ngForm"/>
+                <br>
+                <input type="submit" class="btn btn-primary" value="Add"/>
+            </div>
         </form>
-        <p>Result : {{result}}</p>
+        <div class="row" *ngIf="result">
+            <div class="col-xs-3">Result :</div>
+            <div class="col-xs-9  pull-left">{{result}}</div>
+        </div>
 </div>
