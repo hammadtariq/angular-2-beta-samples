@@ -1,5 +1,5 @@
 {
-  "name": "Angular 2 Forms",
+  "name": "Angular2Forms",
   "version": "1.0.0",
   "description": "simple angular 2 forms demo",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/hammadtariq/Angular2Demos/tree/master/Forms%20Demo"
   },
-  "keywords": [angular,2,typescript,form],
+  "keywords": ["angular","2","typescript","form"],
   "author": "hammad tariq <hammadtariq65@gmial.com>",
   "license": "ISC",
   "dependencies": {
