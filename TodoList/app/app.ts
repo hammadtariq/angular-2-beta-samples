@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core'
-import {TodoComponent} from './todo'
+import {TodoComponent} from './components/todo'
 @Component({
   selector: 'todoApp',
   template: `

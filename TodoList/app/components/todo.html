@@ -1,0 +1,28 @@
+<md-toolbar layout-align="center center" >
+    <h1>To do List</h1>
+</md-toolbar>    
+    <br>
+<div style="margin:0 auto; width:80%;">
+    
+    <form (ngSubmit)="onSubmit(todo.value)" layout="row" layout-align="center center">
+        <md-input-container flex>
+            <label for="todo">Add todo items</label>
+            <input md-input type="text" ngControl="todo" #todo="ngForm" required>
+        </md-input-container>
+        <button md-fab type="submit" class="md-icon-button md-primary md-raised"  aria-label="Add">
+            <i md-icon>add</i>
+        </button>
+    </form>
+
+    <div *ngIf="todoArr.length > 0" layout="row" layout-align="end end">
+        <div style="color:gray">{{counter}} of {{todoArr.length}} remaining</div>
+    </div>
+    
+    <ul style="list-style-type: none;"  layout-align="start start">
+        <li *ngFor="#todo of todoArr #index=index" style="border:1px">
+            <md-checkbox #check (click)="exists(check.checked)" style="display:inline" class="md-primary">{{todo}}</md-checkbox>
+            <a style="color:black" href="#" (click)="delTodo(index)"><i style="margin-left:60vw;" md-icon>delete</i></a>
+        </li>
+    </ul>
+   
+</div>
