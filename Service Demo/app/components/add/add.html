@@ -1,0 +1,9 @@
+<div>
+    <h3>Add Two Numbers</h3>  
+        <form (ngSubmit)="getAddResult(form.value)" #form="ngForm">
+            <input type="number" placeholder="enter first number" ngControl="num1" #num1="ngForm"/>
+            <input type="number" placeholder="enter second number" ngControl="num2" #num2="ngForm"/>
+            <input type="submit" value="Add"/>
+        </form>
+        <p>Result : {{result}}</p>
+</div>
