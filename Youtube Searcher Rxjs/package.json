@@ -1,19 +1,26 @@
 {
-  "name": "customvalidation",
+  "name": "search-app",
   "version": "1.0.0",
-  "description": "forms using custom validations",
   "scripts": {
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+      "tsc": "tsc",
+      "tsc:w": "tsc -w",
+      "lite": "lite-server",
+      "typings": "typings",
+      "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hammadtariq/Angular2Demos/tree/master/Form%20with%20custom%20validations"
+    "url": "https://github.com/hammadtariq/Angular2Demos/master/tree/YoutubeSearcher"
   },
-  "keywords": ["angular","2","typescript","form","custom","validation"],
   "author": "hammad tariq <hammadtariq65@gmial.com>",
+  "keywords": [
+    "angular",
+    "2",
+    "typescript",
+    "search",
+    "rxjs",
+  ],
   "license": "ISC",
   "dependencies": {
     "angular2": "2.0.0-beta.11",
